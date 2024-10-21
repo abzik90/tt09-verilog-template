@@ -23,63 +23,49 @@ project:
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
-  # Map physical pins to logical names according to Clear FPGA mapping
-  mprj_io[0]: "fpga_io_46"
-  mprj_io[1]: "hk_sdo"
-  mprj_io[2]: "hk_sdi"
-  mprj_io[3]: "hk_csb"
-  mprj_io[4]: "hk_sck"
-  mprj_io[5]: "uart_rx"
-  mprj_io[6]: "uart_tx"
-  mprj_io[7]: "irq"
-  mprj_io[8]: "fpga_io_39"
-  mprj_io[9]: "fpga_reset"
-  mprj_io[10]: "fpga_test_enable"
-  mprj_io[11]: "fpga_io_38"
-  mprj_io[12]: "fpga_io_37"
-  mprj_io[13]: "fpga_io_36"
-  mprj_io[14]: "fpga_sc_tail"
-  mprj_io[15]: "fpga_io_19"
-  mprj_io[16]: "fpga_io_18"
-  mprj_io[17]: "fpga_io_17"
-  mprj_io[18]: "fpga_io_16"
-  mprj_io[19]: "fpga_io_15"
-  mprj_io[20]: "fpga_io_14"
-  mprj_io[21]: "fpga_io_13"
-  mprj_io[22]: "fpga_sc_head"
-  mprj_io[23]: "fpga_ccff_tail"
-  mprj_io[24]: "fpga_io_127"
-  mprj_io[25]: "fpga_io_126"
-  mprj_io[26]: "fpga_io_125"
-  mprj_io[27]: "fpga_io_124"
-  mprj_io[28]: "fpga_io_123"
-  mprj_io[29]: "fpga_prog_reset"
-  mprj_io[30]: "fpga_io_122"
-  mprj_io[31]: "fpga_io_121"
-  mprj_io[32]: "fpga_io_120"
-  mprj_io[33]: "fpga_io_119"
-  mprj_io[34]: "fpga_ccff_head"
-  mprj_io[35]: "fpga_clk_sel"
-  mprj_io[36]: "fpga_clk"
-  mprj_io[37]: "fpga_prog_clk"
+  # Map logical names to user interface pins according to Clear FPGA mapping
+  ui[0]: ""
 
-# Keep ui, uo, and uio sections unaltered to ensure compatibility
-ui:
-  - mprj_io[2]  # hk_sdi
-  - mprj_io[5]  # uart_rx
-  - mprj_io[6]  # uart_tx
-  - mprj_io[14] # fpga_sc_tail
-  - mprj_io[22] # fpga_sc_head
+  uo[0]: "fpga_reset"      # FPGA reset
+  uo[1]: "fpga_test_enable" # FPGA test enable
+  # uo[2]: "fpga_io_38"      # FPGA IO pin
+  # uo[3]: "fpga_io_37"      # FPGA IO pin
+  # uo[4]: "fpga_io_36"      # FPGA IO pin
+  uo[5]: "fpga_sc_tail"     # FPGA SC tail
+  # uo[6]: "fpga_io_19"      # FPGA IO pin
+  # uo[7]: "fpga_io_18"      # FPGA IO pin
 
-uo:
-  - mprj_io[7]  # irq
+  uio[0]: "fpga_io_46"      # FPGA IO pin
+  uio[1]: "hk_sdo"          # HK SDO
+  uio[2]: "hk_sdi"          # HK SDI
+  uio[3]: "hk_csb"          # HK CSB
+  uio[4]: "hk_sck"          # HK SCK
+  uio[5]: "uart_rx"         # UART RX
+  uio[6]: "uart_tx"         # UART TX
+  uio[7]: "irq"             # IRQ
+  uio[8]: "fpga_io_39"      # FPGA IO pin
 
-uio:
-  - mprj_io[1]  # hk_sdo
-  - mprj_io[3]  # hk_csb
-  - mprj_io[4]  # hk_sck
-  - mprj_io[10] # fpga_test_enable
-  - mprj_io[11] # fpga_io_38
+  uio[9]: "fpga_io_17"     # FPGA IO pin
+  uio[10]: "fpga_io_16"     # FPGA IO pin
+  uio[11]: "fpga_io_15"     # FPGA IO pin
+  uio[12]: "fpga_io_14"     # FPGA IO pin
+  uio[13]: "fpga_io_13"     # FPGA IO pin
+  uio[14]: "fpga_sc_head"   # FPGA SC head
+  uio[15]: "fpga_ccff_tail" # FPGA CCFF tail
+  uio[16]: "fpga_io_127"    # FPGA IO pin
+  uio[17]: "fpga_io_126"    # FPGA IO pin
+  # uio[9]: "fpga_io_125"    # FPGA IO pin
+  # uio[10]: "fpga_io_124"   # FPGA IO pin
+  # uio[11]: "fpga_io_123"   # FPGA IO pin
+  uio[18]: "fpga_prog_reset" # FPGA prog reset
+  # uio[13]: "fpga_io_122"   # FPGA IO pin
+  # uio[14]: "fpga_io_121"   # FPGA IO pin
+  # uio[15]: "fpga_io_120"   # FPGA IO pin
+  # uio[16]: "fpga_io_119"   # FPGA IO pin
+  uio[19]: "fpga_ccff_head" # FPGA CCFF head
+  uio[20]: "fpga_clk_sel"  # FPGA clock select
+  uio[21]: "fpga_clk"      # FPGA clock
+  uio[22]: "fpga_prog_clk" # FPGA prog clock
 
 # Do not change!
 yaml_version: 6
