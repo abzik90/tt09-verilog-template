@@ -35,12 +35,12 @@ pinout:
 
   uo[0]: "fpga_reset"      # FPGA reset
   uo[1]: "fpga_test_enable" # FPGA test enable
-  # uo[2]: "fpga_io_38"      # FPGA IO pin
-  # uo[3]: "fpga_io_37"      # FPGA IO pin
-  # uo[4]: "fpga_io_36"      # FPGA IO pin
-  uo[5]: "fpga_sc_tail"     # FPGA SC tail
-  # uo[6]: "fpga_io_19"      # FPGA IO pin
-  # uo[7]: "fpga_io_18"      # FPGA IO pin
+  uo[2]: "fpga_sc_tail"
+  uo[3]: ""      # FPGA IO pin
+  uo[4]: ""      # FPGA IO pin
+  uo[5]: ""     # FPGA SC tail
+  uo[6]: ""      # FPGA IO pin
+  uo[7]: ""      # FPGA IO pin
 
   uio[0]: "fpga_io_46"      # FPGA IO pin
   uio[1]: "hk_sdo"          # HK SDO
