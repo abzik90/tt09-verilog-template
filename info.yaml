@@ -25,6 +25,13 @@ project:
 pinout:
   # Map logical names to user interface pins according to Clear FPGA mapping
   ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
 
   uo[0]: "fpga_reset"      # FPGA reset
   uo[1]: "fpga_test_enable" # FPGA test enable
