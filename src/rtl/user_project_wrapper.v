@@ -30,7 +30,7 @@
 `define MPRJ_IO_PADS_2 19	/* number of user GPIO pads on user2 side */
 `define MPRJ_IO_PADS (`MPRJ_IO_PADS_1 + `MPRJ_IO_PADS_2)
 
-module user_project_wrapper #(
+module tt_um_user_project_wrapper #(
     parameter BITS = 32
 )(
 `ifdef USE_POWER_PINS
