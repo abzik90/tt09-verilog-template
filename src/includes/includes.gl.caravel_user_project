@@ -1,0 +1,19 @@
+# Caravel user project includes	     
+
+-v $(USER_PROJECT_VERILOG)/gl/bottom_left_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/bottom_right_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/bottom_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/caravel_core.v
+-v $(USER_PROJECT_VERILOG)/gl/fpga_core.v
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0402.v
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0403.v
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_0801.v
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1803.v
+-v $(USER_PROJECT_VERILOG)/gl/gpio_defaults_block_1808.v
+-v $(USER_PROJECT_VERILOG)/gl/left_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/right_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/tile.v
+-v $(USER_PROJECT_VERILOG)/gl/top_left_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/top_right_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/top_tile.v
+-v $(USER_PROJECT_VERILOG)/gl/user_project_wrapper.v
