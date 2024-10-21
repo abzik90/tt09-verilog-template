@@ -105,7 +105,7 @@ module tt_um_user_project_wrapper #(
     wire prog_clk;
     wire test_enable;
     wire isol_n;
-    wire clk;
+    input clk;
 
 `ifdef PnR
     wire [127:0] gfpga_pad_io_soc_in;
