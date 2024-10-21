@@ -27,7 +27,7 @@ pinout:
   ui[0]: "irq" # IRQ
   ui[1]: "fpga_sc_head" # FPGA SC head
   ui[2]: "fpga_reset" # FPGA reset
-  ui[3]: "clk"      # FPGA clock
+  ui[3]: "fpga_io_32"      # FPGA clock
   ui[4]: "hk_sck" # HK SCK
   ui[5]: "hk_csb" # HK CSB  
   ui[6]: "hk_sdi" # HK SDI
@@ -44,7 +44,7 @@ pinout:
 
   uio[0]: "fpga_ccff_head" # FPGA CCFF head
   uio[1]: "fpga_clk_sel"  # FPGA clock select
-  uio[2]: "fpga_prog_clk" # FPGA prog clock
+  uio[2]: "" # FPGA prog clock
   uio[3]: "fpga_test_enable" # FPGA test enable
   uio[4]: "fpga_io_13"     # FPGA IO pin
   uio[5]: "fpga_io_14"     # FPGA IO pin 
