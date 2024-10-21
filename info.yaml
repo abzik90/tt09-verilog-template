@@ -27,7 +27,7 @@ pinout:
   ui[0]: "irq" # IRQ
   ui[1]: "fpga_sc_head" # FPGA SC head
   ui[2]: "fpga_reset" # FPGA reset
-  ui[3]: "fpga_clk"      # FPGA clock
+  ui[3]: "clk"      # FPGA clock
   ui[4]: "hk_sck" # HK SCK
   ui[5]: "hk_csb" # HK CSB  
   ui[6]: "hk_sdi" # HK SDI
