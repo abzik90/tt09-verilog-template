@@ -17,9 +17,9 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "verilog/rtl/uprj_netlists.v"
-    - "verilog/rtl/user_defines.v"
-    - "verilog/rtl/user_project_wrapper.v"
+    - "rtl/uprj_netlists.v"
+    - "rtl/user_defines.v"
+    - "rtl/user_project_wrapper.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
