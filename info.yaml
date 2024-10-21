@@ -24,55 +24,32 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Map logical names to user interface pins according to Clear FPGA mapping
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "irq" # IRQ
+  ui[1]: "fpga_sc_head" # FPGA SC head
+  ui[2]: "fpga_reset" # FPGA reset
+  ui[3]: "fpga_clk"      # FPGA clock
+  ui[4]: "hk_sck" # HK SCK
+  ui[5]: "hk_csb" # HK CSB  
+  ui[6]: "hk_sdi" # HK SDI
+  ui[7]: "uart_rx" # UART RX
 
-  uo[0]: "fpga_reset"      # FPGA reset
-  uo[1]: "fpga_test_enable" # FPGA test enable
-  uo[2]: "fpga_sc_tail"
-  uo[3]: ""      # FPGA IO pin
-  uo[4]: ""      # FPGA IO pin
-  uo[5]: ""     # FPGA SC tail
-  uo[6]: ""      # FPGA IO pin
-  uo[7]: ""      # FPGA IO pin
+  uo[0]: "hk_sdo" # HK SDO
+  uo[1]: "fpga_sc_tail" # FPGA SC tail
+  uo[2]: "fpga_prog_reset" # FPGA prog reset 
+  uo[3]: "fpga_ccff_tail" # FPGA CCFF tail
+  uo[4]: "fpga_test_enable" # FPGA test enable
+  uo[5]: "uart_tx" # UART TX
+  uo[6]: "fpga_io_16"
+  uo[7]: "fpga_io_17"
 
-  uio[0]: "fpga_io_46"      # FPGA IO pin
-  uio[1]: "hk_sdo"          # HK SDO
-  uio[2]: "hk_sdi"          # HK SDI
-  uio[3]: "hk_csb"          # HK CSB
-  uio[4]: "hk_sck"          # HK SCK
-  uio[5]: "uart_rx"         # UART RX
-  uio[6]: "uart_tx"         # UART TX
-  uio[7]: "irq"             # IRQ
-  uio[8]: "fpga_io_39"      # FPGA IO pin
-
-  uio[9]: "fpga_io_17"     # FPGA IO pin
-  uio[10]: "fpga_io_16"     # FPGA IO pin
-  uio[11]: "fpga_io_15"     # FPGA IO pin
-  uio[12]: "fpga_io_14"     # FPGA IO pin
-  uio[13]: "fpga_io_13"     # FPGA IO pin
-  uio[14]: "fpga_sc_head"   # FPGA SC head
-  uio[15]: "fpga_ccff_tail" # FPGA CCFF tail
-  uio[16]: "fpga_io_127"    # FPGA IO pin
-  uio[17]: "fpga_io_126"    # FPGA IO pin
-  # uio[9]: "fpga_io_125"    # FPGA IO pin
-  # uio[10]: "fpga_io_124"   # FPGA IO pin
-  # uio[11]: "fpga_io_123"   # FPGA IO pin
-  uio[18]: "fpga_prog_reset" # FPGA prog reset
-  # uio[13]: "fpga_io_122"   # FPGA IO pin
-  # uio[14]: "fpga_io_121"   # FPGA IO pin
-  # uio[15]: "fpga_io_120"   # FPGA IO pin
-  # uio[16]: "fpga_io_119"   # FPGA IO pin
-  uio[19]: "fpga_ccff_head" # FPGA CCFF head
-  uio[20]: "fpga_clk_sel"  # FPGA clock select
-  uio[21]: "fpga_clk"      # FPGA clock
-  uio[22]: "fpga_prog_clk" # FPGA prog clock
+  uio[0]: "fpga_ccff_head" # FPGA CCFF head
+  uio[1]: "fpga_clk_sel"  # FPGA clock select
+  uio[2]: "fpga_prog_clk" # FPGA prog clock
+  uio[3]: "fpga_test_enable" # FPGA test enable
+  uio[4]: "fpga_io_13"     # FPGA IO pin
+  uio[5]: "fpga_io_14"     # FPGA IO pin 
+  uio[6]: "fpga_io_15"     # FPGA IO pin
+  uio[7]: "fpga_io_16"     # FPGA IO pin
 
 # Do not change!
 yaml_version: 6
